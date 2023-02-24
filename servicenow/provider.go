@@ -32,11 +32,7 @@ func Provider() *schema.Provider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"servicenow_cmdb_ci": resources.CmdbCiResource(),
-			"servicenow_cmdb_ci_computer": resources.CmdbCiComputerResource(),
-			"servicenow_cmdb_ci_server": resources.CmdbCiServerResource(),
-			"servicenow_cmdb_ci_service": resources.CmdbCiServiceResource(),
-			"servicenow_cmdb_ci_network_adapter": resources.CmdbCiNetworkAdapterResource(),
+			"servicenow_application": resources.ResourceApplication(),
 		},
 
 		ConfigureFunc: providerConfigure,
